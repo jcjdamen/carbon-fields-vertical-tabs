@@ -1,16 +1,17 @@
 .cf-container__vertical-tabs {
   display: flex;
   align-items: flex-start;
-  background-color: #f6f7f7;
+  background-color: #f9f9f9;
+  overflow: hidden;
 
   .cf-container__fields {
     width: 100%;
     padding: 1.5rem;
-    border-right: 1px solid #c3c4c7;
+    border-right: 1px solid #ededed;
   }
 
   .cf-field {
-    border-color: #c3c4c7 !important;
+    border-color: #ededed !important;
     border-right: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -27,7 +28,7 @@
       h3 {
         padding: 1rem;
         color: #000;
-        background-color: #f6f7f7;
+        background-color: #f9f9f9;
 
         &:first-child {
           margin-top: 0;
@@ -42,20 +43,20 @@
     position: relative;
     z-index: 1;
     padding: 0 !important;
-    border-color: #c3c4c7;
+    border-color: #ededed;
     border-bottom: 1px solid;
-    background-color: #f6f7f7;
+    background-color: #f9f9f9;
 
     .cf-container__tabs-item {
       display: flex;
       align-items: center;
-      padding: 8px 12px !important;
-      border-color: #c3c4c7 !important;
+      padding: 0;
+      border-color: #dfdfdf !important;
       border-top: 0;
       border-left: 0;
       border-bottom: 1px solid;
+      font-size: 13px;
       margin: 0;
-      font-size: 12px;
       cursor: none;
       transition: background-color 0.1s linear, border-color 0.1s linear;
       font-weight: 600;
@@ -64,11 +65,14 @@
         width: 100%;
         text-align: left;
         cursor: pointer;
+        line-height: 18px;
+        padding: 12px !important;
       }
     }
 
     .cf-container__tabs-item--current {
       border-right: 0;
+      border-color: #dfdfdf !important;
     }
   }
 
