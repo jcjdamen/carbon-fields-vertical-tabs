@@ -72,7 +72,6 @@
 
     .cf-container__tabs-item--current {
       border-right: 0;
-      border-color: #dfdfdf !important;
     }
   }
 
@@ -91,6 +90,7 @@
   ul {
     list-style-type: none;
     display: inline-flex;
+    overflow-wrap: normal;
   }
 
   li {
@@ -100,6 +100,23 @@
   .cf-field__body {
     display: flex;
     overflow: hidden;
+
+    label {
+      background-color: #f6f7f7;
+      color: rgb(0 0 0 / 60%);
+      font-size: 13px;
+      line-height: 2.5;
+      text-align: center;
+      padding: 6px 16px;
+      margin-right: -1px;
+      border: 1px solid rgb(0 0 0 / 20%);
+      box-shadow: inset 0 1px 3px rgba(0 0 0 / 30%), 0 1px rgba(255 255 255 / 10%);
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
     input {
       position: absolute !important;
@@ -123,23 +140,6 @@
 
     li:last-of-type label {
       border-radius: 0 2px 2px 0;
-    }
-
-    label {
-      background-color: #f6f7f7;
-      color: rgb(0 0 0 / 60%);
-      font-size: 13px;
-      line-height: 2.5;
-      text-align: center;
-      padding: 6px 16px;
-      margin-right: -1px;
-      border: 1px solid rgb(0 0 0 / 20%);
-      box-shadow: inset 0 1px 3px rgba(0 0 0 / 30%), 0 1px rgba(255 255 255 / 10%);
-      transition: all 0.1s ease-in-out;
-
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 }
